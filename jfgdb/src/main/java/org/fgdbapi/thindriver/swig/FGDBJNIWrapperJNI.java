@@ -13,7 +13,7 @@ import org.fgdbapi.thindriver.SharedLibrariesInitializer;
 public class FGDBJNIWrapperJNI {
 
 	static {
-		SharedLibrariesInitializer.initLibraries();
+		//SharedLibrariesInitializer.initLibraries();
 		FGDBJNIWrapper.setMaxOpenFiles(2048);
 	}
 

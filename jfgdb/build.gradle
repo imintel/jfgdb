@@ -102,7 +102,7 @@ dependencies {
 
 
 def rootMainResources = new File(project.buildDir , "/resources/main")
-def rootOutputLibs = new File(rootMainResources, "sharedlibraries/" + project.version)
+def rootOutputLibs = new File(rootMainResources, "sharedlibraries/" )
 def outputlibsdir = new File(rootOutputLibs, 
 			"${com.sun.jna.Platform.RESOURCE_PREFIX}")
 
@@ -122,6 +122,7 @@ task copySharedLibsInResources << {
        from( "../nativewrapper/build/binaries/fGDBJNIWrapperSharedLibrary") 
            include("FGDB*.dll")
            include("*.so")
+	       include("*.dylib")
    }
    assert  System.getenv("ESRI_FILE_GDB_HOME") != null 
    assert  new File(System.getenv("ESRI_FILE_GDB_HOME")).exists()
@@ -139,6 +140,7 @@ task copySharedLibsInResources << {
    into(outputlibsdir)     
    from( System.getenv("ESRI_FILE_GDB_HOME") + "/lib") 
        include("*.so")
+	   include("*.dylib")
    
    }
 
@@ -170,7 +172,7 @@ if (System.getProperty("java.class.version") >= "52") {
     task syncBinariesObjects(type: jp.classmethod.aws.gradle.s3.SyncTask) {
       bucketName 'jfgdb'
       source file(rootOutputLibs)
-      prefix "sharedlibraries/${project.version}/"
+      prefix "sharedlibraries/"
     }
 
     if (System.getenv("ESRI_FILE_GDB_HOME") != null) {
@@ -180,30 +182,6 @@ if (System.getProperty("java.class.version") >= "52") {
 }
 
 
-task transfertPreparedBinaries() << {
-	
-				 DefaultAWSCredentialsProviderChain credentialProviderChain = new DefaultAWSCredentialsProviderChain();
-				 TransferManager tx = new TransferManager(
-							   credentialProviderChain.getCredentials());
-
-	
-				def r = tx.downloadDirectory("jfgdb","sharedlibraries/${project.version}/", rootMainResources)
-				print("downloading .");
-				r.addProgressListener( [
-					"progressChanged" : { e->
-						print(".");
-					}
-				] as com.amazonaws.event.ProgressListener);
-				
-				r.waitForCompletion()
-				println ""
-				tx.shutdownNow()
-	
-		}
-	
-		processResources.dependsOn transfertPreparedBinaries
-	
-	
 
 
 task createVersionPropertyFile << {

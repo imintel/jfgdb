@@ -18,7 +18,8 @@ apply plugin:'distribution'
              contents {
                             from (project(':nativewrapper').buildDir) {
                                 include('binaries/**/*.dll') 
-                                include('binaries/**/*.so') 
+                                include('binaries/**/*.so')
+                                include('binaries/**/*.dylib')
                             }
 
                         from {

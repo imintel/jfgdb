@@ -1,0 +1,4 @@
+See file:///home/ckcook/code/jfgdb/nativewrapper/build/tmp/createFGDBJNIWrapperStaticLibrary/output.txt for all output for createFGDBJNIWrapperStaticLibrary.
+archiving libFGDBJNIWrapper.a successful.
+
+Finished createFGDBJNIWrapperStaticLibrary, see full log file:///home/ckcook/code/jfgdb/nativewrapper/build/tmp/createFGDBJNIWrapperStaticLibrary/output.txt.

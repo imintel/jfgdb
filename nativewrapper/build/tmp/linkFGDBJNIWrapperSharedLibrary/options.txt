@@ -1,0 +1,9 @@
+-shared
+-Wl,-soname,libFGDBJNIWrapper.so
+-o
+/home/ckcook/code/jfgdb/nativewrapper/build/binaries/fGDBJNIWrapperSharedLibrary/libFGDBJNIWrapper.so
+/home/ckcook/code/jfgdb/nativewrapper/build/objs/fGDBJNIWrapperSharedLibrary/FGDBJNIWrapperCpp/2ktaqqa8cez3ngq8k5y2oxjhw/FGDBJNIWrapper_wrap.o
+-L/home/ckcook/Downloads/FileGDB_API-64/lib
+-lFileGDBAPI
+-lfgdbunixrtl
+-m64

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jfgdb.iml" filepath="$PROJECT_DIR$/.idea/modules/jfgdb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jfgdb/jfgdb-jfgdb.iml" filepath="$PROJECT_DIR$/.idea/modules/jfgdb/jfgdb-jfgdb.iml" group="jfgdb" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jfgdb/jfgdb-jfgdb_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jfgdb/jfgdb-jfgdb_main.iml" group="jfgdb" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jfgdb/jfgdb-jfgdb_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jfgdb/jfgdb-jfgdb_test.iml" group="jfgdb" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jfgdb_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jfgdb_main.iml" group="jfgdb" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jfgdb_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jfgdb_test.iml" group="jfgdb" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nativewrapper/nativewrapper.iml" filepath="$PROJECT_DIR$/.idea/modules/nativewrapper/nativewrapper.iml" group="nativewrapper" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nativewrapper/nativewrapper_main.iml" filepath="$PROJECT_DIR$/.idea/modules/nativewrapper/nativewrapper_main.iml" group="nativewrapper" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nativewrapper/nativewrapper_test.iml" filepath="$PROJECT_DIR$/.idea/modules/nativewrapper/nativewrapper_test.iml" group="nativewrapper" />
+    </modules>
+  </component>
+</project>

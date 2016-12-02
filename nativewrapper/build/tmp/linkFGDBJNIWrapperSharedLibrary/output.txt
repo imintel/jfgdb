@@ -1,0 +1,4 @@
+See file:///home/ckcook/code/jfgdb/nativewrapper/build/tmp/linkFGDBJNIWrapperSharedLibrary/output.txt for all output for linkFGDBJNIWrapperSharedLibrary.
+linking libFGDBJNIWrapper.so successful.
+
+Finished linkFGDBJNIWrapperSharedLibrary, see full log file:///home/ckcook/code/jfgdb/nativewrapper/build/tmp/linkFGDBJNIWrapperSharedLibrary/output.txt.

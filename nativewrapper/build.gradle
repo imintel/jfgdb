@@ -95,7 +95,7 @@ def JAVA_HOME;
                               cppCompiler.args "-I" + new File(ESRI_FILE_GDB_HOME, "include").getAbsolutePath(),
                                                             "-I" + new File(JAVA_HOME, "include").getAbsolutePath(),
                                                             "-I" + new File(JAVA_HOME, "include/linux").getAbsolutePath()
-
+                                                            "-I"+ new File(JAVA_HOME, "include/darwin").getAbsolutePath()
                         
                               linker.args "-L${ESRI_FILE_GDB_HOME.getAbsolutePath()}/lib", "-lFileGDBAPI", "-lfgdbunixrtl"
      

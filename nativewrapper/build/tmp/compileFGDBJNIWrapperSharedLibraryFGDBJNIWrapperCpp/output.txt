@@ -1,0 +1,4 @@
+See file:///home/ckcook/code/jfgdb/nativewrapper/build/tmp/compileFGDBJNIWrapperSharedLibraryFGDBJNIWrapperCpp/output.txt for all output for compileFGDBJNIWrapperSharedLibraryFGDBJNIWrapperCpp.
+compiling FGDBJNIWrapper_wrap.cxx successful.
+
+Finished compileFGDBJNIWrapperSharedLibraryFGDBJNIWrapperCpp, see full log file:///home/ckcook/code/jfgdb/nativewrapper/build/tmp/compileFGDBJNIWrapperSharedLibraryFGDBJNIWrapperCpp/output.txt.
